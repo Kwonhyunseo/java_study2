@@ -14,4 +14,21 @@
 	<natures>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>src/com/sist/movie/SeoulLocationVO.java</name>
+			<type>1</type>
+			<locationURI>PARENT-3-PROJECT_LOC/Desktop/SeoulLocationVO.java</locationURI>
+		</link>
+		<link>
+			<name>src/com/sist/movie/SeoulSystem.java</name>
+			<type>1</type>
+			<locationURI>PARENT-3-PROJECT_LOC/Desktop/SeoulSystem.java</locationURI>
+		</link>
+		<link>
+			<name>src/com/sist/movie/Usermain.java</name>
+			<type>1</type>
+			<locationURI>PARENT-3-PROJECT_LOC/Desktop/Usermain.java</locationURI>
+		</link>
+	</linkedResources>
 </projectDescription>

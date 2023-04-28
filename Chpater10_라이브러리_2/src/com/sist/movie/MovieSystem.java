@@ -107,6 +107,15 @@ public MovieVO movieDetailData(int no)
 			 System.out.print("상세볼 영화번호 입력(1~1938) :");
 			 int no = scan.nextInt();
 			 MovieVO vo =movieDetailData(no);
+			 System.out.println("========상세보기 =====");
+			 System.out.println("영화명 : "+vo.getNo());
+			 System.out.println("영화명 : "+vo.getTitle());
+			 System.out.println("영화명 : "+vo.getDirector());
+			 System.out.println("영화명 : "+vo.getActor());
+			 System.out.println("영화명 : "+vo.getGenre());
+			 System.out.println("영화명 : "+vo.getRegdate());
+			
+			 
 		 }
 	 }
  }
