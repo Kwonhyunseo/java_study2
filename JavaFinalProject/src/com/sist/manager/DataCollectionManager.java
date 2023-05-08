@@ -87,7 +87,7 @@ public class DataCollectionManager {
         			System.out.println(album.get(j).text());
         			System.out.println(poster.get(j).attr("src"));
         			String ss=etc.get(j).text();
-        			//System.out.println(ss);
+        			System.out.println(ss);
         			String state="";
         			String id="";// 등폭 
         			// 
@@ -156,7 +156,7 @@ public class DataCollectionManager {
 			while(m.find())
 			{
 				String s=m.group();
-				// s=/watch?v=BOjSR3L_f-w\u0026pp=ygUJ7JWE7J2067iM"
+				//s=/watch?v=BOjSR3L_f-w\u0026pp=ygUJ7JWE7J2067iM"
 				s=s.substring(s.indexOf("=")+1,s.indexOf("\""));
 				key=s;
 				break;
