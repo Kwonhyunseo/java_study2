@@ -24,7 +24,7 @@ public class MusicSystem {
 		
 		finally
 		{
-			  try3
+			  try
 			  {
 				  fis.close();
 				  ois.close();
