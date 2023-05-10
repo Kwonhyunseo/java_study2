@@ -99,3 +99,5 @@ public class Detailpanel1 extends JPanel implements ActionListener{
 }
 
 
+
+

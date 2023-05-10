@@ -84,7 +84,7 @@ public class Server implements Runnable{
     {
     	try
     	{
-    		ss=new ServerSocket(PORT);
+    		ss=new ServerSocket(3355);
     		// bind() => listen()
     		// PORT => 50명 한정 
     		System.out.println("Server Start...");
@@ -262,6 +262,29 @@ public class Server implements Runnable{
 				    		   break;
 				    	   }
 				    	}
+				    }
+				    break;
+				    case Function.EXIT:
+				    {
+				    	String mid=st.nextToken();
+				    	int i=0;
+				    	for(Client user:waitVc)
+				    	{
+				    		if(user.id.equals(mid))
+				    		{
+				    			
+				    			user.messageTo(Function.MYEXIT+"|");
+				    			waitVc.remove(i);
+				    			in.close();
+				    			out.close();
+				    			// 서버 종료 
+				    			break;
+				    		}
+				    		i++;
+				    	}
+				    	
+				    	// 전체 메세지 
+				    	messageAll(Function.EXIT+"|"+mid);
 				    }
 				    break;
 				}

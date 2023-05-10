@@ -10,7 +10,7 @@ import com.sist.manager.GenieMusicVO;
 import com.sist.manager.MusicSystem;
 import java.util.*;
 import java.util.List;
-public class NetworkMain extends JFrame implements ActionListener{
+public class NetworkMain22 extends JFrame implements ActionListener{
     MenuPanel mp;
     ControlPanel cp;
     TopPanel tp;
@@ -21,7 +21,7 @@ public class NetworkMain extends JFrame implements ActionListener{
     int curpage=1;
     int totalpage=0;
     MusicSystem ms=new MusicSystem();
-    public NetworkMain()
+    public NetworkMain22()
     {
     	logo=new JLabel();
     	Image img=ImageChange.getImage(
@@ -145,7 +145,7 @@ public class NetworkMain extends JFrame implements ActionListener{
 			System.exit(0); // 프로그램 종료
 		}
 		else if(e.getSource()==cp.cp.tf)
-		{   server Socket("")
+		{   
 			cp.cp.initStyle();
 			String msg=cp.cp.tf.getText();
 			String color=cp.cp.box.getSelectedItem().toString();

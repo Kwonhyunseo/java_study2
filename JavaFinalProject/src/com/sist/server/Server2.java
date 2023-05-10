@@ -65,7 +65,7 @@ import com.sist.common.Function;
 
 import java.net.*;
 import java.io.*;
-public class Server implements Runnable{
+public class Server2 implements Runnable{
 	// 클라이언트 접속시에 정보(IP) 
 	private Vector<Client> waitVc=new Vector<Client>();
 	/*
@@ -78,13 +78,13 @@ public class Server implements Runnable{
 	 *     add , get , size 
 	 */
     private ServerSocket ss;
-    private final int PORT=3355;
+    private final int PORT=10000;
     // 서버 가동 ==> 한컴퓨터안에서 서버를 두개 실행 할 수 없다 
-    public Server()
+    public Server2()
     {
     	try
     	{
-    		ss=new ServerSocket(PORT);
+    		ss=new ServerSocket(10000);
     		// bind() => listen()
     		// PORT => 50명 한정 
     		System.out.println("Server Start...");
